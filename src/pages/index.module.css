@@ -21,9 +21,6 @@
   margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 996px) {
-}
-
 .buttons {
   display: flex;
   align-items: center;
@@ -40,6 +37,19 @@
   height: 100vh;
   margin-top: calc(-1 * var(--ifm-navbar-height));
   padding: 2rem 0 calc(2rem - var(--ifm-navbar-height));
+}
+
+/* the spacer is used to center the zanecorp logo */
+:global(.homePage header > .container) .spacer {
+  visibility: hidden;
+  height: 100%;
+  width: calc(9.9rem + 3px);
+}
+
+@media screen and (max-width: 996px) { /* but on mobile, we don't want that since it takes up valuable space */
+  :global(.homePage header > .container) .spacer {
+    display: none;
+  }
 }
 
 :global(.homePage header > .container) > div.logoAndNavContainer {

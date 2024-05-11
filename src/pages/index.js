@@ -11,6 +11,7 @@ function HomepageHeader() {
   return (
     <header>
       <div className="container">
+        <div className={clsx(styles.spacer)}></div>
         <div className={clsx(styles.logoAndNavContainer)}>
           <img className={clsx(styles.logo)} 
             src="/img/zanecorp-logo.svg"
