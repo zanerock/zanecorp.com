@@ -9,11 +9,11 @@
   --ll-background-color-opaque: #ffffffff;
 
   /* #21327d; Liquid Labs Blue */
-  --ll-color-primary-hue: 229;
-  --ll-color-primary-saturation: 58%;
-  --ll-color-primary-lightness: 31%;
+  --ll-color-primary-hue: 0;
+  --ll-color-primary-saturation: 0%;
+  --ll-color-primary-lightness: 0%;
 
-  --ifm-color-content-secondary: #ca6928;
+  --ifm-color-content-secondary: #000000;
 
   /* brand fonts */
   --ifm-font-color-base: var(--ifm-color-primary);
@@ -23,8 +23,21 @@
   --ifm-heading-font-weight: bold;
 
   --ifm-font-color-base: var(--ifm-color-primary);
+
+  /* button settings */
   --ll-button-font-family: var(--ifm-heading-font-family);
   --ifm-button-font-weight: 800;
+
+  --ll-button-border-width: 3px;
+  --ifm-button-border-radius: 0;
+  
+  --ll-button-color-hover: var(--ifm-color-primary);
+  --ll-button-background-color-hover: var(--ifm-color-primary-contrast-background);
+  --ll-button-border-color-hover: var(--ifm-color-primary);
+
+  --ll-button-color-active: var(--ifm-color-primary-contrast-background);
+  --ll-button-backgronud-color-active: var(--ifm-color-primary);
+  --ll-button-border-color-active: var(--ifm-color-primary);
 
   /* content link behavior */
   --ll-content-link-color: var(--ifm-color-primary);
@@ -46,10 +59,12 @@
     the 1px is for the bottom border */
   --ifm-navbar-height: calc(var(--ll-navbar-logo-height) + 2 * var(--ifm-navbar-padding-vertical) + 1px);
 
+  /* navigation elements */
   --ll-nav-color: var(--ifm-color-primary);
   --ll-nav-text-decoration: none;
   --ll-nav-color-hover: var(--ifm-color-content-secondary);
   --ll-nav-text-decoration-hover: underline;
+  --ll-nav-text-font-weight-hover: bold;
   --ll-nav-color-active: var(--ifm-color-content-secondary);
   --ll-nav-text-decoration-active: none;
 
@@ -65,18 +80,18 @@
 
 html[data-theme='dark'] {
   /* #1b1b1d */
-  --ll-background-color-hue: 240;
-  --ll-background-color-saturation: 4%;
-  --ll-background-color-lightness: 11%;
+  --ll-background-color-hue: 0;
+  --ll-background-color-saturation: 0%;
+  --ll-background-color-lightness: 0%;
 
-  --ll-background-color-transparent: #1b1b1d00;
-  --ll-background-color-opaque: #1b1b1dff;
+  --ll-background-color-transparent: #00000000;
+  --ll-background-color-opaque: #000000ff;
 
-  /* #33ff33 Apple II green */
-  --ll-color-primary-hue: 120;
-  --ll-color-primary-saturation: 80%;
-  --ll-color-primary-lightness: 60%;
+  --ll-color-primary-hue: 0;
+  --ll-color-primary-saturation: 100%;
+  --ll-color-primary-lightness: 100%;
 
   /* old school terminal amber */
-  --ifm-color-content-secondary: #ffb000;
+  --ifm-color-content-secondary: #ffffff;
+  --ifm-navbar-background-color: var(--ifm-background-color);
 }

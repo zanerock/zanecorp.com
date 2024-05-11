@@ -66,10 +66,11 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: '',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/zanecorp-logo-name-only.svg',
+          srcDark: 'img/zanecorp-logo-name-only-dark.svg'
         },
         items: [
           {
@@ -80,9 +81,10 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
+            href         : 'https://github.com/liquid-labs/zanecorp.com',
+            position     : 'right',
+            className    : 'header-github-link',
+            'aria-label' : 'GitHub repository'
           },
         ],
       },

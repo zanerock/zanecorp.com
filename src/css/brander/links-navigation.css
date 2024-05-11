@@ -37,6 +37,7 @@ a.breadcrumbs__link--active,
 [class*="sidebarItem"] [class*="sidebarItemLinkActive"] {
   /* there's an !important in the blog style module we have to overcome */
   color: var(--ll-nav-color-active) !important;
+  font-weight: var(--ll-nav-text-font-weight-hover);
   text-decoration: var(--ll-nav-text-decoration-active);
 }
 

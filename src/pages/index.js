@@ -16,9 +16,8 @@ function HomepageHeader() {
           <img className={clsx(styles.logo)} 
             src="/img/zanecorp-logo.svg"
             alt="Zanecorp logo showing large Z above stylized 'ZANECORP'" />
-          <Link className={clsx('button', styles.navButton)} to=".">Reviews</Link>
-          <div className={clsx(styles.navButton)}>Reviews</div>
-          <div className={clsx(styles.navButton)}>Blog</div>
+          <Link className={clsx('button', styles.navButton)} to="/docs/">Reviews</Link>
+          <Link className={clsx('button', styles.navButton)} to="/blog">Blog</Link>
         </div>
       </div>
     </header>

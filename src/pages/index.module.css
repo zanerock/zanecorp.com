@@ -15,9 +15,6 @@
 .logoAndNavContainer > .navButton {
   float: right;
   width: 9.9rem;
-  textAlign: right;
-  background-color: black;
-  color: white;
   text-align: right;
   padding: 10px;
   font-size: 1.5rem;
