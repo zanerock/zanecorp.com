@@ -1,0 +1,12 @@
+/* reduce huge padding at bottom of blog article summary */
+#__docusaurus article.margin-bottom--xl {
+  margin-bottom: 1.25rem !important;
+}
+
+#__docusaurus article.margin-bottom--xl footer {
+  margin-top: 1.25rem;
+}
+
+article >header > h2 > a {
+  font-size: 2rem;
+}

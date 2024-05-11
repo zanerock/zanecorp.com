@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "URW Gothic L";
+  src:
+    local("URW Gothic L"),
+    url("/fonts/urw-gothic-l-2.woff2") format("woff2"),
+    url("/fonts/urw-gothic-l-2.woff") format("woff"),
+    url("/fonts/urw-gothic-l-2.ttf") format("truetype");
+}

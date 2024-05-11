@@ -1,0 +1,34 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.logoAndNavContainer {
+  width: calc((100vh - 4rem) * .609 + 10rem);
+}
+
+.logoAndNavContainer > .logo {
+  height: calc(100vh - 4rem);
+  float: left;
+}
+
+.logoAndNavContainer > .navButton {
+  float: right;
+  width: 9.9rem;
+  textAlign: right;
+  background-color: black;
+  color: white;
+  text-align: right;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 996px) {
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
