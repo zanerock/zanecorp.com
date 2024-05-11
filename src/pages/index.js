@@ -1,15 +1,16 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import NoNavLayout from '../components/NoNavLayout';
+// import NoNavLayout from '../components/NoNavLayout';
+import Layout from '@theme/Layout'
 
 import styles from './index.module.css';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header style={{ height: '100vh', padding: '2rem 0' }}>
-      <div style={{ height: 'calc(100vh - 4rem)', display: 'flex', justifyContent: 'center' }} className="container">
+    <header>
+      <div className="container">
         <div className={clsx(styles.logoAndNavContainer)}>
           <img className={clsx(styles.logo)} 
             src="/img/zanecorp-logo.svg"
@@ -25,11 +26,11 @@ function HomepageHeader() {
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <NoNavLayout
+    <Layout
       wrapperClassName='homePage'
       title={siteConfig.title}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
-    </NoNavLayout>
+    </Layout>
   );
 }

@@ -29,3 +29,27 @@
   align-items: center;
   justify-content: center;
 }
+
+:global(.homePage header > .container) {
+  height: calc(100vh - 4rem);
+  display: flex;
+  justify-content: center;
+}
+
+:global(.homePage) header {
+  height: 100vh;
+  margin-top: calc(-1 * var(--ifm-navbar-height));
+  padding: 2rem 0 calc(2rem - var(--ifm-navbar-height));
+}
+
+:global(.homePage header > .container) > div.logoAndNavContainer {
+  z-index: 999; /* pop it over the navbar so we don't clip the top */
+}
+
+:global(nav:has(+ .homePage)) {
+  border-bottom: none;
+}
+
+:global(nav:has(+ .homePage) .navbar__items:not(.navbar__items--right)) {
+  visibility: hidden;
+}
