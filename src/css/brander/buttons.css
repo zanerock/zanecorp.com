@@ -17,12 +17,13 @@
   }
 }
 
-.button, .button.button--secondary, a.button, a.button.button--secondary {
-  color: var(--ifm-color-primary-contrast-background);
+.button, .button.button--secondary, a.button[href], a.button.button--secondary[href] {
+  color: var(--ifm-background-color);
   background-color: var(--ifm-color-primary);
   /* we set the border so that when we do the 'active', the UI doesn't 'jump' because the button changes dimensions */
   border: var(--ll-button-border-width) solid var(--ifm-color-primary);
   font-family: var(--ll-button-font-family);
+  text-decoration: none;
 }
 
 .button:hover, a.button:hover, a.button.button--secondary:hover {
@@ -31,7 +32,7 @@
   border-color: var(--ll-button-border-color-hover);
 }
 
-.button:active, a.button:active, a.button.button--secondary:active {
+.button:active, a.button[href]:active, a.button.button--secondary[href]:active {
   color: var(--ll-button-color-active);
   background-color: var(--ll-button-backgronud-color-active);
   border-color: var(--ll-button-border-color-active);
