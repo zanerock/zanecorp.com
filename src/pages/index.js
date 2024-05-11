@@ -14,7 +14,7 @@ function HomepageHeader() {
           <img className={clsx(styles.logo)} 
             src="/img/zanecorp-logo.svg"
             alt="Zanecorp logo showing large Z above stylized 'ZANECORP'" />
-          <Link className={clsx('button', styles.navButton)} to="/docs/">Reviews</Link>
+          <Link className={clsx('button', styles.navButton)} to="/docs/welcome">Reviews</Link>
           <Link className={clsx('button', styles.navButton)} to="/blog">Blog</Link>
         </div>
       </div>
@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <NoNavLayout
       wrapperClassName='homePage'
-      title={`Hello from ${siteConfig.title}`}
+      title={siteConfig.title}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
     </NoNavLayout>
