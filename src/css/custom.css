@@ -35,11 +35,6 @@ main {
   margin-bottom: var(--ifm-spacing-vertical);
 }
 
-.navbar__logo img:hover {
-  /* can't really animate because the hue rotates through green, which is weird */
-  filter: hue-rotate(-205deg) saturate(67%) brightness(2);
-}
-
 [data-theme='dark'] .navbar__logo img:hover {
   filter: hue-rotate(-71deg) saturate(100%) brightness(1);
 }
@@ -64,18 +59,6 @@ a.table-of-contents__link {
   font-weight: bold;
 }
 
-div.sub-title {  
-  font-weight: bold;
-}
-
-div.sub-title > p {
-  margin-bottom: var(--ifm-heading-margin-bottom);
-}
-
-p + div.flow-list, div:has(> p) + div.flow-list {
-  margin-top: calc(-1 * var(--ifm-paragraph-margin-bottom) + 0.25rem);
-}
-
 /* not sure why, but the bottom margin of lists and bottom margin of paragraphs is different (at least in Desktop mode); let's correct that */
 :root {
   --ifm-list-margin: var(--ifm-paragraph-margin-bottom);
@@ -83,9 +66,6 @@ p + div.flow-list, div:has(> p) + div.flow-list {
   --ifm-font-size-base: 115%;
 }
 
-.markdown :is(h2, h3, h4, h5, h6) {
-  margin-bottom: 0.25rem;
-}
 
 a.table-of-contents__link {
   line-height: 1.15rem;
