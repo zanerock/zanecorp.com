@@ -20,7 +20,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'liquid-labs', // Usually your GitHub org/user name.
+  organizationName: 'zanerock', // Usually your GitHub org/user name.
   projectName: 'zanecorp.com', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com//liquid-labs/zanecorp.com/tree/main/docs/',
+            'https://github.com//zanerock/zanecorp.com/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com//liquid-labs/zanecorp.com/tree/main/docs/blog',
+            'https://github.com/zanerock/zanecorp.com/tree/main/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -87,7 +87,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href         : 'https://github.com/liquid-labs/zanecorp.com',
+            href         : 'https://github.com/zanerock/zanecorp.com',
             position     : 'right',
             className    : 'header-github-link',
             'aria-label' : 'GitHub repository'
