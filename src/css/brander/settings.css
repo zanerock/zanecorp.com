@@ -62,11 +62,15 @@
   /* navigation elements */
   --ll-nav-color: var(--ifm-color-primary);
   --ll-nav-text-decoration: none;
+  --ll-nav-text-font-weight: normal;
+
   --ll-nav-color-hover: var(--ifm-color-content-secondary);
   --ll-nav-text-decoration-hover: underline;
-  --ll-nav-text-font-weight-hover: bold;
+  --ll-nav-text-font-weight-hover: normal;
+
   --ll-nav-color-active: var(--ifm-color-content-secondary);
   --ll-nav-text-decoration-active: none;
+  --ll-nav-text-font-weight-active: bold;
 
   /* kill background highlighting of menu items */
   --ifm-menu-color-background-hover: inherit; 
@@ -74,6 +78,8 @@
   --ifm-dropdown-hover-background-color: inherit;
   --ifm-breadcrumb-item-background-hover: inherit;
   --ifm-breadcrumb-item-background-active: inherit;
+
+  --ifm-toc-border-color: var(--ifm-color-primary);
 
   --ll-modal-animation-duration: 250ms;
 }
@@ -90,6 +96,8 @@ html[data-theme='dark'] {
   --ll-color-primary-hue: 0;
   --ll-color-primary-saturation: 100%;
   --ll-color-primary-lightness: 100%;
+  
+  --ifm-toc-border-color: var(--ifm-color-primary);
 
   /* old school terminal amber */
   --ifm-color-content-secondary: #ffffff;
