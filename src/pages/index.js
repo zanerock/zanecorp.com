@@ -35,7 +35,7 @@ export default function Home() {
     <Layout
       wrapperClassName='homePage'
       title={siteConfig.title}
-      description="Description will go into a meta tag in <head />">
+      description="Reviews and stuff from Zane.">
       <HomepageHeader />
     </Layout>
   );
