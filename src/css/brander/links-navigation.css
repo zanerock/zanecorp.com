@@ -46,11 +46,17 @@ a.breadcrumbs__link--active,
 .footer__item a[href] {
   color: var(--ifm-background-color);
   font-weight: 500;
+  text-decoration: none;;
 }
 
 .footer__item a[href]:hover {
-  color: var(--ll-nav-color-hover);
+  text-decoration: underline;
 }
+
+.footer__item a[href]:active {
+  font-weight: 700;
+}
+
 
 button[class*=toggleButton] {
   color: var(--ll-nav-color);

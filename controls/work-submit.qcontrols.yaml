@@ -1,0 +1,122 @@
+name: work-submit
+source: '@liquid-labs/policy-projects-best-practices-controls'
+description: |
+  This question control set defines a series of general "best practice" questions to ask before a submission with the aim of better ensuring a high quality, robust software product. These questions are not intended to satisfy any particular compliance, security, or other standards.
+
+  The following variables in particular may be determined positive through automated means and the associated question thereby skipped:
+  - `WORK_SUBMIT_HAS_QA_EXCEPTIONS`: whether all the pre-submit QA checks passed or not
+  - `WORK_SUBMIT_LINT_REPORT_URL`: URL to the lint report
+  - `WORK_SUBMIT_UNIT_TEST_REPORT_URL`: URL to the unit tests
+controls:
+  - name: submit-implementation
+    description: Changes are consistent with and limited to the change ticket.
+    actions:
+      - prompt: Do the changes <em>implement all concrete TODOs<rst> in the change
+          ticket?
+        parameter: WORK_SUBMIT_IMPLEMENT_ALL_TODOS
+        paramType: boolean
+        requireExact: true
+      - prompt: Are there other changes not described in the original work description?
+        parameter: WORK_SUBMIT_HAS_ADDITIONAL_CHANGES
+        paramType: boolean
+      - condition: WORK_SUBMIT_HAS_ADDITIONAL_CHANGES
+        prompt: 'Are all <em>additional changes non-behavior modifying<rst>? Allowed
+          changes include: inline documentation, improving names, additional testing,
+          updating existing dependencies, file organization and naming, and simple
+          optimizations.'
+        parameter: WORK_SUBMIT_ADDITIONAL_CHANGES_PERMITTED
+        paramType: boolean
+        elseValue: true
+        requireExact: true
+      - condition: WORK_SUBMIT_HAS_ADDITIONAL_CHANGES
+        prompt: Have the <em>additional changes been documented<rst> in the change
+          ticket description under the <em>Additional changes<rst> section?
+        parameter: WORK_SUBMIT_ADDITIONAL_CHANGES_DOCUMENTED
+        paramType: boolean
+        elseValue: true
+        requireExact: true
+      - maps:
+          - description: 'All ticket requierements met:'
+            parameter: WORK_SUBMIT_TICKET_REQS_MET
+            paramType: boolean
+            source: WORK_SUBMIT_IMPLEMENT_ALL_TODOS && WORK_SUBMIT_ADDITIONAL_CHANGES_PERMITTED
+              && WORK_SUBMIT_ADDITIONAL_CHANGES_DOCUMENTED
+            requireExact: true
+    supports: []
+  - name: submit-qa-tests
+    description: Changes are unit tested according to policy.
+    actions:
+      - prompt: 'Provide link to the <em>unit test report<rst> covering the submission
+          or a detailed description where it can be found:'
+        parameter: WORK_SUBMIT_UNIT_TEST_REPORT_URL
+        requireTruthy: true
+        alwaysInclude: true
+      - prompt: Are there any <em>QA exceptions<rst> which need to be addressed?
+        parameter: WORK_SUBMIT_HAS_QA_EXCEPTIONS
+        paramType: boolean
+      - condition: WORK_SUBMIT_HAS_QA_EXCEPTIONS
+        prompt: Have the QA exceptions and an accompanying risk analysis already been
+          documented in the pull-request ticket?
+        parameter: WORK_SUBMIT_QA_EXCEPTIONS_ARE_DOCUMENTED
+        paramType: boolean
+        elseValue: true
+      - condition: WORK_SUBMIT_HAS_QA_EXCEPTIONS && !WORK_SUBMIT_QA_EXCEPTIONS_ARE_DOCUMENTED
+        prompt: 'Provide a <em>business justification<rst> for allowing QA exceptions:'
+        parameter: WORK_SUBMIT_QA_EXCEPTIONS_JUSTIFICATION
+        paramType: string
+        elseValue: ''
+      - condition: WORK_SUBMIT_HAS_QA_EXCEPTIONS && !WORK_SUBMIT_QA_EXCEPTIONS_ARE_DOCUMENTED
+        prompt: 'Provide an <em>analysis<rst> of the possible security, stability,
+          and general risk entailed:'
+        parameter: WORK_SUBMIT_QA_EXCEPTIONS_RISK_ANAYSIS
+        paramType: string
+        elseValue: ''
+      - prompt: 'Provide link to the <em>lint report<rst> the submission or a detailed
+          description where it can be found:'
+        parameter: WORK_SUBMIT_LINT_REPORT_URL
+        requireTruthy: true
+        alwaysInclude: true
+      - maps:
+          - description: 'All unit test requirements are met and any exceptions are
+              documented and analyzide:'
+            parameter: CANGES_UNIT_TEST_REQS_MET
+            paramType: boolean
+            source: WORK_SUBMIT_UNIT_TEST_REPORT_URL && (!WORK_SUBMIT_HAS_QA_EXCEPTIONS ||
+              (WORK_SUBMIT_QA_EXCEPTIONS_JUSTIFICATION && WORK_SUBMIT_QA_EXCEPTIONS_RISK_ANAYSIS))
+            requireExact: true
+    supports:
+      - E51DE60E-FC61-47C3-8D3C-584F1DABE90E
+  - name: submit-third-party-services
+    description: Changes follow security policies regarding third-party services and
+      queries.
+    actions:
+      - prompt: Do the changes add or involve connections, authentication, or queries
+          to a database or any third-party service?
+        parameter: WORK_SUBMIT_THIRD_PARTY_SERVICES_MODIFIED
+        paramType: boolean
+      - condition: WORK_SUBMIT_THIRD_PARTY_SERVICES_MODIFIED
+        prompt: Have any <em>database calls<rst> been added or modified?
+        parameter: WORK_SUBMIT_DB_CALLS_MODIFIED
+        paramType: boolean
+        elseValue: false
+        requireExact: false
+      - condition: WORK_SUBMIT_DB_CALLS_MODIFIED
+        prompt: Are all <em>database queries escaped<rst> using industry standard
+          libraries?
+        parameter: WORK_SUBMIT_DB_QUERIES_ESCAPED
+        paramType: boolean
+        elseValue: true
+        requireExact: false
+    supports:
+      - 76816A9C-285F-4D6A-B9F0-A95FD47F41D4
+  - name: submit-debug-removed
+    description: All debug, hard-coded test data, and hard-coded authentication data
+      has been removed.
+    actions:
+      - prompt: Has all debug, hard coded test data, and hard coded authentication
+          data been removed?
+        parameter: WORK_SUBMIT_DEBUG_REMOVED
+        paramType: boolean
+        requireExact: true
+    supports:
+      - 8FEB945D-C8BE-4411-8080-3961835F9B1A
