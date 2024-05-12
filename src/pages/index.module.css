@@ -3,22 +3,36 @@
  * and scoped locally.
  */
 
+:root {
+  --zc-logo-top-bottom-padding: 2rem;
+
+  --zc-nav-button-length: 9.9rem;
+  --zc-nav-button-padding: 10px;
+  --zc-nav-button-font-size: 1.5rem;
+  --zc-nav-button-left-margin: 0.5rem;
+  --zc-nav-button-bottom-margin: 0.5rem;
+  --zc-nav-button-letter-spacing: 0.5px;
+}
+
 .logoAndNavContainer {
-  width: calc((100vh - 4rem) * .609 + 10rem);
+  /* the 1px makes enough room for the navbuttons to fit next to the logo */
+  width: calc((100vh - (2 * var(--zc-logo-top-bottom-padding))) * .609 + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
 }
 
 .logoAndNavContainer > .logo {
-  height: calc(100vh - 4rem);
+  height: calc(100vh - (2 * var(--zc-logo-top-bottom-padding)));
   float: left;
 }
 
 .logoAndNavContainer > .navButton {
   float: right;
-  width: 9.9rem;
+  width: var(--zc-nav-button-length);
   text-align: right;
-  padding: 10px;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  padding: var(--zc-nav-button-padding);
+  font-size: var(--zc-nav-button-font-size);
+  margin-left: var(--zc-nav-button-left-margin);
+  margin-bottom: var(--zc-nav-button-bottom-margin);
+  letter-spacing: var(--zc-nav-button-letter-spacing);
 }
 
 .buttons {
@@ -28,7 +42,7 @@
 }
 
 :global(.homePage header > .container) {
-  height: calc(100vh - 4rem);
+  height: calc(100vh - (2 * var(--zc-logo-top-bottom-padding)));
   display: flex;
   justify-content: center;
 }
@@ -36,14 +50,14 @@
 :global(.homePage) header {
   height: 100vh;
   margin-top: calc(-1 * var(--ifm-navbar-height));
-  padding: 2rem 0 calc(2rem - var(--ifm-navbar-height));
+  padding: var(--zc-logo-top-bottom-padding) 0 calc(var(--zc-logo-top-bottom-padding) - var(--ifm-navbar-height));
 }
 
 /* the spacer is used to center the zanecorp logo */
 :global(.homePage header > .container) .spacer {
   visibility: hidden;
   height: 100%;
-  width: calc(9.9rem + 3px);
+  width: calc(var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
 }
 
 @media screen and (max-width: 996px) { /* but on mobile, we don't want that since it takes up valuable space */
