@@ -32,12 +32,14 @@
   --ifm-button-border-radius: 0;
   
   --ll-button-color-hover: var(--ifm-color-primary);
-  --ll-button-background-color-hover: var(--ifm-color-primary-contrast-background);
+  --ll-button-background-color-hover: var(--ifm-background-color);
   --ll-button-border-color-hover: var(--ifm-color-primary);
+  --ll-button-border-color-hover-dark: var(--ifm-background-color);
 
-  --ll-button-color-active: var(--ifm-color-primary-contrast-background);
+  --ll-button-color-active: var(--ifm-background-color);
   --ll-button-backgronud-color-active: var(--ifm-color-primary);
   --ll-button-border-color-active: var(--ifm-color-primary);
+  --ll-button-border-color-active-dark: var(--ifm-color-background);
 
   /* content link behavior */
   --ll-content-link-color: var(--ifm-color-primary);
