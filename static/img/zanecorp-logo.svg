@@ -24,15 +24,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.66635802"
-     inkscape:cx="360.16675"
-     inkscape:cy="522.24178"
+     inkscape:zoom="1.404327"
+     inkscape:cx="294.80314"
+     inkscape:cy="909.33239"
      inkscape:window-width="1410"
      inkscape:window-height="916"
-     inkscape:window-x="475"
+     inkscape:window-x="314"
      inkscape:window-y="1118"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="g1405" />
   <defs
      id="defs2" />
   <g
@@ -41,7 +41,7 @@
      id="layer1"
      transform="translate(-17.81821,-20.620096)">
     <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:3.56096;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:16;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       style="fill:#ffffff;stroke:#000000;stroke-width:3.56096;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:16;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
        id="rect632"
        width="152.43904"
        height="224.60304"
@@ -52,12 +52,13 @@
        id="g1405"
        transform="translate(0,-4.7625002)">
       <rect
-         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.58172;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:16;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.58172;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:16;stroke-dasharray:none;stroke-opacity:1"
          id="rect1396"
          width="152.41827"
          height="27.560167"
          x="19.60907"
-         y="252.16568" />
+         y="252.16568"
+         ry="0" />
       <g
          aria-label="ZANECORP"
          id="text474"

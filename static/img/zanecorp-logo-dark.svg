@@ -9,6 +9,9 @@
    id="svg5"
    inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
    sodipodi:docname="zanecorp-logo-dark.svg"
+   inkscape:export-filename="zanecorp-logo-dark.png"
+   inkscape:export-xdpi="119.363"
+   inkscape:export-ydpi="119.363"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +35,7 @@
      inkscape:window-x="314"
      inkscape:window-y="1118"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="g1405" />
   <defs
      id="defs2" />
   <g
@@ -41,7 +44,7 @@
      id="layer1"
      transform="translate(-17.81821,-20.620096)">
     <rect
-       style="fill:none;stroke:#ffffff;stroke-width:3.56096;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:16;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       style="fill:none;stroke:#ffffff;stroke-width:3.561;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:16;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
        id="rect632"
        width="152.43904"
        height="224.60304"
@@ -52,12 +55,13 @@
        id="g1405"
        transform="translate(0,-4.7625002)">
       <rect
-         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3.58172;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:16;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:3.58172;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:16;stroke-dasharray:none;stroke-opacity:1"
          id="rect1396"
          width="152.41827"
          height="27.560167"
          x="19.60907"
-         y="252.16568" />
+         y="252.16568"
+         ry="0" />
       <g
          aria-label="ZANECORP"
          id="text474"
