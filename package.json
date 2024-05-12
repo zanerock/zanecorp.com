@@ -13,6 +13,14 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids"
   },
+  "repository": {
+    "url": "git+ssh://github.com/zanerock/zanecorp.com.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/zanerock/zanecorp.com/README.md",
+  "bugs": {
+    "url": "https://github.com/zanerock/zanecorp.com/issues"
+  },
   "dependencies": {
     "@docusaurus/core": "3.3.2",
     "@docusaurus/preset-classic": "3.3.2",
