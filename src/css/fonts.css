@@ -6,3 +6,21 @@
     url("/fonts/urw-gothic-l-2.woff") format("woff"),
     url("/fonts/urw-gothic-l-2.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: u2800;
+  src: url("/fonts/u2800.woff2") format("woff2"),
+    url("/fonts/u2800.woff") format("woff");
+  font-weight: 400;
+  font-style: normal
+}
+
+.u2800 {
+  font-family: u2800;
+}
+
+.half-star {
+  font-size: 125%;
+  position: relative;
+  top: 2px;
+}
