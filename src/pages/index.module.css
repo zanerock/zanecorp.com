@@ -4,87 +4,31 @@
  */
 
 :root {
-  --zc-logo-top-bottom-padding: 2rem;
-
   --zc-nav-button-length: 9.9rem;
   --zc-nav-button-padding: 10px;
   --zc-nav-button-font-size: 1.5rem;
-  --zc-nav-button-left-margin: 0.5rem;
-  --zc-nav-button-bottom-margin: 0.5rem;
+  --zc-nav-button-line-height: 2rem;
+  --zc-nav-button-margin-left: 0.5rem;
+  --zc-nav-button-margin-bottom: 0.5rem;
   --zc-nav-button-letter-spacing: 0.5px;
 
-  --zc-logo-and-nav-width: calc((100vh - (2 * var(--zc-logo-top-bottom-padding))) * .609 + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
-  --zc-llogo-and-side-nav-min-width: calc(var(--zc-logo-and-nav-width) + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin));
+  --zc-nav-button-height: calc(var(--zc-nav-button-line-height) + 2 * var(--zc-nav-button-padding));
+
+  --zc-logo-height: calc(100dvh - 2 * var(--zc-logo-top-bottom-padding) - var(--zc-nav-button-height));
+  --zc-logo-top-bottom-padding: 2rem;
 }
 
-.logoAndNavContainer {
-  /* the 1px makes enough room for the navbuttons to fit next to the logo */
-  width: var(--zc-logo-and-nav-width);
-}
-
-.logoAndNavContainer .logo {
-  height: calc(100vh - (2 * var(--zc-logo-top-bottom-padding)));
-  float: left;
-}
-
-/* on mobile screens, the URL bar is part of the vh, whic can cause the Z logo to get cut off on the bottom, so we have to make it a bit shorter. You would think dvh would work, but it doesn't */
-@media (pointer:none), (pointer:coarse) {
-  /*:root {
-    --zc-logo-and-nav-width: calc((100vh - (2 * var(--zc-logo-top-bottom-padding)) - 2rem) * .609 + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
-  }
-
-  .logoAndNavContainer .logo {
-    height: calc(100vh - (2 * var(--zc-logo-top-bottom-padding)) - 2rem);
-  }*/
-  :root {
-    --zc-logo-and-nav-width: calc((100dvh - (2 * var(--zc-logo-top-bottom-padding))) * .609 + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
-  }
-
-  .logoAndNavContainer .logo {
-    height: calc(100dvh - (2 * var(--zc-logo-top-bottom-padding)));
-  }
-}
-
-.logoAndNavContainer > .navButton {
-  float: right;
-  width: var(--zc-nav-button-length);
-  text-align: right;
-  padding: var(--zc-nav-button-padding);
-  font-size: var(--zc-nav-button-font-size);
-  margin-left: var(--zc-nav-button-left-margin);
-  margin-bottom: var(--zc-nav-button-bottom-margin);
-  letter-spacing: var(--zc-nav-button-letter-spacing);
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-:global(.homePage header > .container) {
-  height: calc(100vh - (2 * var(--zc-logo-top-bottom-padding)));
-  display: flex;
-  justify-content: center;
-}
-
-:global(.homePage) header {
-  height: 100vh;
-  margin-top: calc(-1 * var(--ifm-navbar-height));
-  padding: var(--zc-logo-top-bottom-padding) 0 calc(var(--zc-logo-top-bottom-padding) - var(--ifm-navbar-height));
-}
-
-/* the spacer is used to center the zanecorp logo */
-:global(.homePage header > .container) .spacer {
-  visibility: hidden;
-  height: 100%;
-  width: calc(var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
+/* hide the homepage navbar on wide screens */
+:global(nav:has(+ .homePage)) {
+  border-bottom: var(--ll-navbar-bottom-border-width) solid transparent;
+  background-color: transparent;
 }
 
 :global(nav:has(+ .homePage) .navbar__items:not(.navbar__items--right)) {
   visibility: hidden;
 }
 
+/* where docusaurus flips to hamburger menu, then e do want to display that */
 @media screen and (max-width: 996px) {
   :global(nav:has(+ .homePage) .navbar__items:not(.navbar__items--right)) {
     visibility: visible;
@@ -95,44 +39,76 @@
   }
 }
 
-@media screen and (max-width: 700px) {
-  /* with smaller width, we kill the spacer that centers the Z in order to save space */
+.nav-button {
+  min-width: var(--zc-nav-button-length);
+  padding: var(--zc-nav-button-padding);
+  margin-bottom: var(--zc-nav-button-margin-bottom);
+  margin-left: var(--zc-nav-button-margin-left);
+  font-size: var(--zc-nav-button-font-size);
+  letter-spacing: var(--zc-nav-button-letter-spacing);
+  line-height: var(--zc-nav-button-line-height);
+}
+
+.logo-and-nav-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: calc(var(--zc-logo-top-bottom-padding) - var(--ifm-navbar-height));
+  margin-bottom: var(--zc-logo-top-bottom-padding);
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-and-nav-container .logo {
+  display: block;
+  max-height: var(--zc-logo-height);
+  margin-bottom: var(--zc-nav-button-margin-bottom);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (orientation: landscape), (aspect-ratio = 1) {
+  .logo-container {
+    width: auto;
+    display: block;
+  }
+
+  .logo-and-nav-container .logo { /* need to specifiers to overcome a theme seletor that sets display to 'initial' */
+    --zc-logo-height: calc(100dvh - 2 * var(--zc-logo-top-bottom-padding));
+    display: inline-block;
+  }
+
+  .button-container {
+    display: inline-block;
+  }
+
+  .nav-button {
+    display: block;
+    text-align: right;
+  }
+
+  @media (max-height: 500px) {
+    .nav-button {
+      min-width: calc(var(--zc-nav-button-length) * var(--zc-scale-factor));
+      padding: calc(var(--zc-nav-button-padding) * var(--zc-scale-factor));
+      font-size: calc(var(--zc-nav-button-font-size) * var(--zc-scale-factor));
+      line-height: calc(var(--zc-nav-button-line-height) * var(--zc-scale-factor));
+    }
+  }
+}
+
+
+/* @media screen and (max-width: 700px) { 
+  /* with smaller width, we kill the spacer that centers the Z in order to save space * /
   :global(.homePage header > .container) .spacer {
     display: none;
   }
-}
-
-:global(nav:has(+ .homePage)) {
-  border-bottom: none;
-  background-color: transparent;
-}
-
-@media screen and (max-width: 518px) { /* that's the break point where nav buttons get pushed off */
-  .logoAndNavContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .logoAndNavContainer .logo-container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
-
-  :global(div.homePage) header .logoAndNavContainer .logo {
-    margin-bottom: var(--zc-nav-button-bottom-margin);
-  }
-
-  .logoAndNavContainer .navButton {
-    text-align: center;
-  }
-
-  :global(.homePage header > .container) {
-    height: unset;
-  }
-
-  :global(.homePage) header {
-    height: unset;
-  }
-}
+}*/

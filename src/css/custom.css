@@ -20,6 +20,8 @@
 @import url("./brander/scroll-fix.css");
 @import url("./brander/transitions.css");
 
+@import url("./buttons.css");
+
 /* @import url("./modal.global.css"); */
 
 /* You can override the default Infima variables here. */
