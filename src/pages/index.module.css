@@ -1,79 +1,146 @@
 /**
+ * The homepage layout has the following features:
+ * - in portrait (the default):
+ *   - the 'Z' logo is set to be as large as it can while leaving room to display at least one navigation button
+ *   - the nav buttons are display underneath the 'Z' logo
+ * - in landscape mode:
+ *   - the is sized to take up all the space - top/bottom padding (currently 2rem)
+ *   - the nav buttons are displayed next to the 'Z' logo
+ *   - at small heights, the nav buttons are shrunk by up to 65% so the proportions between the logo and buttons 
+ *     remains good (this uses Javascript code in the index.js file to set the '--zc-scale-factor' property)
+ * - The and nav buttons 'fade in'; this is important because on a small height landscape where the nav buttons are 
+ *   scaled, the spacer and buttons will cause everything to jump because you'll breifly see the display before the 
+ *   scale factor is applied. Applying the fade in hides this.
+ * 
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
 
 :root {
-  --zc-logo-top-bottom-padding: 2rem;
+  --zc-logo-fade-in-speed: 1.5s;
+  --zc-logo-fade-in-delay: ease-in;
 
   --zc-nav-button-length: 9.9rem;
   --zc-nav-button-padding: 10px;
   --zc-nav-button-font-size: 1.5rem;
-  --zc-nav-button-left-margin: 0.5rem;
-  --zc-nav-button-bottom-margin: 0.5rem;
+  --zc-nav-button-line-height: 2rem;
+  --zc-nav-button-margin-left: 0.5rem;
+  --zc-nav-button-margin-bottom: 0.5rem;
   --zc-nav-button-letter-spacing: 0.5px;
+
+  --zc-nav-button-height: calc(var(--zc-nav-button-line-height) + 2 * var(--zc-nav-button-padding));
+
+  --zc-logo-height: calc(100dvh - 2 * var(--zc-logo-top-bottom-padding) - var(--zc-nav-button-height));
+  --zc-logo-top-bottom-padding: 2rem;
 }
 
-.logoAndNavContainer {
-  /* the 1px makes enough room for the navbuttons to fit next to the logo */
-  width: calc((100vh - (2 * var(--zc-logo-top-bottom-padding))) * .609 + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
-}
-
-.logoAndNavContainer > .logo {
-  height: calc(100vh - (2 * var(--zc-logo-top-bottom-padding)));
-  float: left;
-}
-
-.logoAndNavContainer > .navButton {
-  float: right;
-  width: var(--zc-nav-button-length);
-  text-align: right;
-  padding: var(--zc-nav-button-padding);
-  font-size: var(--zc-nav-button-font-size);
-  margin-left: var(--zc-nav-button-left-margin);
-  margin-bottom: var(--zc-nav-button-bottom-margin);
-  letter-spacing: var(--zc-nav-button-letter-spacing);
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-:global(.homePage header > .container) {
-  height: calc(100vh - (2 * var(--zc-logo-top-bottom-padding)));
-  display: flex;
-  justify-content: center;
-}
-
-:global(.homePage) header {
-  height: 100vh;
-  margin-top: calc(-1 * var(--ifm-navbar-height));
-  padding: var(--zc-logo-top-bottom-padding) 0 calc(var(--zc-logo-top-bottom-padding) - var(--ifm-navbar-height));
-}
-
-/* the spacer is used to center the zanecorp logo */
-:global(.homePage header > .container) .spacer {
-  visibility: hidden;
-  height: 100%;
-  width: calc(var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
-}
-
-@media screen and (max-width: 996px) { /* but on mobile, we don't want that since it takes up valuable space */
-  :global(.homePage header > .container) .spacer {
-    display: none;
-  }
-}
-
-:global(.homePage header > .container) > div.logoAndNavContainer {
-  z-index: 999; /* pop it over the navbar so we don't clip the top */
-}
-
+/* hide the homepage navbar on wide screens */
 :global(nav:has(+ .homePage)) {
-  border-bottom: none;
+  border-bottom: var(--ll-navbar-bottom-border-width) solid transparent;
+  background-color: transparent;
 }
 
 :global(nav:has(+ .homePage) .navbar__items:not(.navbar__items--right)) {
   visibility: hidden;
 }
+
+/* where docusaurus flips to hamburger menu, then e do want to display that */
+@media screen and (max-width: 996px) {
+  :global(nav:has(+ .homePage) .navbar__items:not(.navbar__items--right)) {
+    visibility: visible;
+  }
+
+  :global(.navbar__logo) {
+    visibility: hidden;
+  }
+}
+
+.nav-button {
+  min-width: var(--zc-nav-button-length);
+  padding: var(--zc-nav-button-padding);
+  margin-bottom: var(--zc-nav-button-margin-bottom);
+  margin-right: var(--zc-nav-button-margin-left);
+  margin-left: 0;
+  font-size: var(--zc-nav-button-font-size);
+  letter-spacing: var(--zc-nav-button-letter-spacing);
+  line-height: var(--zc-nav-button-line-height);
+}
+
+.logo-and-nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: calc(var(--zc-logo-top-bottom-padding) - var(--ifm-navbar-height));
+  margin-bottom: var(--zc-logo-top-bottom-padding);
+  opacity: 0;
+  transition: opacity var(--zc-logo-fade-in-speed) var(--zc-logo-fade-in-delay);
+
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-and-nav-container .logo {
+  display: block;
+  max-height: var(--zc-logo-height);
+  margin-bottom: var(--zc-nav-button-margin-bottom);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (orientation: landscape), (aspect-ratio = 1) {
+  .logo-container {
+    width: auto;
+    display: block;
+  }
+
+  .logo-and-nav-container .logo { /* need to specifiers to overcome a theme seletor that sets display to 'initial' */
+    --zc-logo-height: calc(100dvh - 2 * var(--zc-logo-top-bottom-padding));
+    display: inline-block;
+  }
+
+  .button-container {
+    display: inline-block;
+  }
+
+  .logo-and-nav-container {
+    flex-wrap: nowrap;
+  }
+
+.logo-and-nav-container .spacer {
+    --zc-logo-height: calc(100dvh - 2 * var(--zc-logo-top-bottom-padding));
+    max-width: calc(var(--zc-nav-button-length) + var(--zc-nav-button-margin-left));
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: calc(var(--zc-nav-button-length) + var(--zc-nav-button-margin-left));;
+    min-width: 0px;
+  }
+
+  .nav-button {
+    display: block;
+    text-align: right;
+    margin-left: var(--zc-nav-button-margin-left);
+    margin-right: 0;
+  }
+
+  @media (max-height: 500px) {
+    .nav-button {
+      min-width: calc(var(--zc-nav-button-length) * var(--zc-scale-factor));
+      padding: calc(var(--zc-nav-button-padding) * var(--zc-scale-factor));
+      font-size: calc(var(--zc-nav-button-font-size) * var(--zc-scale-factor));
+      line-height: calc(var(--zc-nav-button-line-height) * var(--zc-scale-factor));
+    }
+
+    .logo-and-nav-container .spacer {
+      max-width: calc((var(--zc-nav-button-length) + var(--zc-nav-button-margin-left)) * var(--zc-scale-factor));
+    }
+  }
+}
+
