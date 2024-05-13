@@ -14,6 +14,9 @@ function HomepageHeader() {
 
   useEffect(() => {
     const onResize = () => {
+      const logoAndNavContainer = document.getElementById('logo-and-nav-container')
+      logoAndNavContainer.style.setProperty('opacity', '1');
+
       if (window.innerHeight < 500) {
         var r = document.querySelector(':root');
         const buttonContainer = document.getElementById('homepage-button-container')
@@ -35,7 +38,7 @@ function HomepageHeader() {
     <header>
       <div className="container">
         <div className={clsx(styles.spacer)}></div>
-        <div className={clsx(styles['logo-and-nav-container'])}>
+        <div id="logo-and-nav-container" className={clsx(styles['logo-and-nav-container'])}>
           <div className={clsx(styles.spacer)}></div>
           <div className={clsx(styles['logo-container'])}>
             <ThemedImage className={clsx(styles.logo)}

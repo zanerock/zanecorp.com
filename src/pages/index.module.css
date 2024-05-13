@@ -8,12 +8,18 @@
  *   - the nav buttons are displayed next to the 'Z' logo
  *   - at small heights, the nav buttons are shrunk by up to 65% so the proportions between the logo and buttons 
  *     remains good (this uses Javascript code in the index.js file to set the '--zc-scale-factor' property)
+ * - The and nav buttons 'fade in'; this is important because on a small height landscape where the nav buttons are 
+ *   scaled, the spacer and buttons will cause everything to jump because you'll breifly see the display before the 
+ *   scale factor is applied. Applying the fade in hides this.
  * 
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
 
 :root {
+  --zc-logo-fade-in-speed: 1.5s;
+  --zc-logo-fade-in-delay: ease-in;
+
   --zc-nav-button-length: 9.9rem;
   --zc-nav-button-padding: 10px;
   --zc-nav-button-font-size: 1.5rem;
@@ -66,6 +72,9 @@
   justify-content: center;
   margin-top: calc(var(--zc-logo-top-bottom-padding) - var(--ifm-navbar-height));
   margin-bottom: var(--zc-logo-top-bottom-padding);
+  opacity: 0;
+  transition: opacity var(--zc-logo-fade-in-speed) var(--zc-logo-fade-in-delay);
+
 }
 
 .logo-container {
