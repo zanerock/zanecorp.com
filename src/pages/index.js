@@ -9,14 +9,13 @@ import ThemedImage from '@theme/ThemedImage';
 
 import styles from './index.module.css';
 
+let loaded = false
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
 
   useEffect(() => {
     const onResize = () => {
-      const logoAndNavContainer = document.getElementById('logo-and-nav-container')
-      logoAndNavContainer.style.setProperty('opacity', '1');
-
       if (window.innerHeight < 500) {
         var r = document.querySelector(':root');
         const buttonContainer = document.getElementById('homepage-button-container')
@@ -25,12 +24,14 @@ function HomepageHeader() {
       }
     }
 
-    window.addEventListener('resize', onResize);
-    window.addEventListener('load', onResize);
+    if (loaded === false) { // fade in the logo and nav
+      const logoAndNavContainer = document.getElementById('logo-and-nav-container')
+      logoAndNavContainer.style.setProperty('opacity', '1')
+    }
 
+    window.addEventListener('resize', onResize);
     return () => {
       window.removeEventListener('resize', onResize);
-      window.removeEventListener('load', onResize);
     }
   }, [])
 
