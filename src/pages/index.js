@@ -14,7 +14,6 @@ function HomepageHeader() {
 
   useEffect(() => {
     const onResize = () => {
-      console.log('hi')
       if (window.innerHeight < 500) {
         var r = document.querySelector(':root');
         const buttonContainer = document.getElementById('homepage-button-container')
@@ -37,6 +36,7 @@ function HomepageHeader() {
       <div className="container">
         <div className={clsx(styles.spacer)}></div>
         <div className={clsx(styles['logo-and-nav-container'])}>
+          <div className={clsx(styles.spacer)}></div>
           <div className={clsx(styles['logo-container'])}>
             <ThemedImage className={clsx(styles.logo)}
               alt="Zanecorp logo showing large Z above stylized 'ZANECORP'"
