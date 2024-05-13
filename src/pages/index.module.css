@@ -12,16 +12,37 @@
   --zc-nav-button-left-margin: 0.5rem;
   --zc-nav-button-bottom-margin: 0.5rem;
   --zc-nav-button-letter-spacing: 0.5px;
+
+  --zc-logo-and-nav-width: calc((100vh - (2 * var(--zc-logo-top-bottom-padding))) * .609 + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
+  --zc-llogo-and-side-nav-min-width: calc(var(--zc-logo-and-nav-width) + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin));
 }
 
 .logoAndNavContainer {
   /* the 1px makes enough room for the navbuttons to fit next to the logo */
-  width: calc((100vh - (2 * var(--zc-logo-top-bottom-padding))) * .609 + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
+  width: var(--zc-logo-and-nav-width);
 }
 
-.logoAndNavContainer > .logo {
+.logoAndNavContainer .logo {
   height: calc(100vh - (2 * var(--zc-logo-top-bottom-padding)));
   float: left;
+}
+
+/* on mobile screens, the URL bar is part of the vh, whic can cause the Z logo to get cut off on the bottom, so we have to make it a bit shorter. You would think dvh would work, but it doesn't */
+@media (pointer:none), (pointer:coarse) {
+  /*:root {
+    --zc-logo-and-nav-width: calc((100vh - (2 * var(--zc-logo-top-bottom-padding)) - 2rem) * .609 + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
+  }
+
+  .logoAndNavContainer .logo {
+    height: calc(100vh - (2 * var(--zc-logo-top-bottom-padding)) - 2rem);
+  }*/
+  :root {
+    --zc-logo-and-nav-width: calc((100dvh - (2 * var(--zc-logo-top-bottom-padding))) * .609 + var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
+  }
+
+  .logoAndNavContainer .logo {
+    height: calc(100dvh - (2 * var(--zc-logo-top-bottom-padding)));
+  }
 }
 
 .logoAndNavContainer > .navButton {
@@ -60,20 +81,58 @@
   width: calc(var(--zc-nav-button-length) + var(--zc-nav-button-left-margin) + 1px);
 }
 
-@media screen and (max-width: 996px) { /* but on mobile, we don't want that since it takes up valuable space */
+:global(nav:has(+ .homePage) .navbar__items:not(.navbar__items--right)) {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 996px) {
+  :global(nav:has(+ .homePage) .navbar__items:not(.navbar__items--right)) {
+    visibility: visible;
+  }
+
+  :global(.navbar__logo) {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* with smaller width, we kill the spacer that centers the Z in order to save space */
   :global(.homePage header > .container) .spacer {
     display: none;
   }
 }
 
-:global(.homePage header > .container) > div.logoAndNavContainer {
-  z-index: 999; /* pop it over the navbar so we don't clip the top */
-}
-
 :global(nav:has(+ .homePage)) {
   border-bottom: none;
+  background-color: transparent;
 }
 
-:global(nav:has(+ .homePage) .navbar__items:not(.navbar__items--right)) {
-  visibility: hidden;
+@media screen and (max-width: 518px) { /* that's the break point where nav buttons get pushed off */
+  .logoAndNavContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logoAndNavContainer .logo-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  :global(div.homePage) header .logoAndNavContainer .logo {
+    margin-bottom: var(--zc-nav-button-bottom-margin);
+  }
+
+  .logoAndNavContainer .navButton {
+    text-align: center;
+  }
+
+  :global(.homePage header > .container) {
+    height: unset;
+  }
+
+  :global(.homePage) header {
+    height: unset;
+  }
 }

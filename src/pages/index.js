@@ -14,13 +14,15 @@ function HomepageHeader() {
       <div className="container">
         <div className={clsx(styles.spacer)}></div>
         <div className={clsx(styles.logoAndNavContainer)}>
-          <ThemedImage className={clsx(styles.logo)}
-            alt="Zanecorp logo showing large Z above stylized 'ZANECORP'"
-            sources={{
-              light: '/img/zanecorp-logo.svg',
-              dark: '/img/zanecorp-logo-dark.svg'
-            }}
-          />
+          <div class={clsx(styles['logo-container'])}>
+            <ThemedImage className={clsx(styles.logo)}
+              alt="Zanecorp logo showing large Z above stylized 'ZANECORP'"
+              sources={{
+                light: '/img/zanecorp-logo.svg',
+                dark: '/img/zanecorp-logo-dark.svg'
+              }}
+            />
+          </div>
           <Link className={clsx('button', styles.navButton)} to="/docs/welcome">Reviews</Link>
           <Link className={clsx('button', styles.navButton)} to="/blog">Blog</Link>
         </div>
