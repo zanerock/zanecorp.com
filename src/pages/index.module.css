@@ -1,4 +1,14 @@
 /**
+ * The homepage layout has the following features:
+ * - in portrait (the default):
+ *   - the 'Z' logo is set to be as large as it can while leaving room to display at least one navigation button
+ *   - the nav buttons are display underneath the 'Z' logo
+ * - in landscape mode:
+ *   - the is sized to take up all the space - top/bottom padding (currently 2rem)
+ *   - the nav buttons are displayed next to the 'Z' logo
+ *   - at small heights, the nav buttons are shrunk by up to 65% so the proportions between the logo and buttons 
+ *     remains good (this uses Javascript code in the index.js file to set the '--zc-scale-factor' property)
+ * 
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
@@ -105,10 +115,3 @@
   }
 }
 
-
-/* @media screen and (max-width: 700px) { 
-  /* with smaller width, we kill the spacer that centers the Z in order to save space * /
-  :global(.homePage header > .container) .spacer {
-    display: none;
-  }
-}*/
