@@ -45,6 +45,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com//zanerock/zanecorp.com/tree/main/',
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,

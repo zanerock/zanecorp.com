@@ -2,6 +2,7 @@
 description: Confusing, poorly made, and lots of fun.
 tags:
   - bad movie
+  - comedy
   - 1990s
 ---
 import DocTags from '@site/src/components/DocTags';
@@ -33,7 +34,7 @@ What is available is an [intentionally shitty version on YouTube](https://youtu.
 - The movie is mirrored. This one isn't so bad, just a little odd looking whenever you're looking at something with words on.
 </div>
 
-This is all of course to avoid algorithmic identification. The move's only had 8.3K views in 7 years (as of May 11th, 2025). So I guess it's working... yaaaayy....
+This is all of course to avoid algorithmic identification. The move's only had 8.3K views in 7 years (as of May 11th, 2024). So I guess it's working... yaaaayy....
 
 Which is all to say, it's very possible there was a more cogent explanation of what was happening and I simply missed it because it can be hard to hear at times. I also had to step out for ~25 min to handle a family emergency... but really, missing 1/3 of the movie doubtfully changes much.
 
