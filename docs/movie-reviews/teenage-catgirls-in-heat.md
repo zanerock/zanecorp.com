@@ -1,13 +1,14 @@
 ---
+description: Confusing, poorly made, and lots of fun.
 tags:
   - bad movie
   - 1990s
 ---
-import TagsListInline from '@theme/TagsListInline';
+import DocTags from '@site/src/components/DocTags';
 
 # Teenage Catgirls in Heat
 
-<TagsListInline tags={ frontMatter.tags.map((t) => ({ href: `/docs/tags/${t}`, label: t })) }/>
+<DocTags tags={ frontMatter.tags } />
 
 Quality: <span class="u2800 half-star">&#11240;</span>
 Entertainment: <span class="u2800">&#9733;&#9733;&#9733;<span class="half-star">&#11240;</span></span>
