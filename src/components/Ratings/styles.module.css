@@ -1,0 +1,27 @@
+table.ratings-table, table.ratings-table tr, table.ratings-table td {
+  border: none;
+  background: none;
+}
+
+table.ratings-table td {
+  padding: 0;
+}
+
+table.ratings-table td:nth-child(1) {
+  font-weight: bold;
+}
+
+table.ratings-table td:nth-child(2) {
+  padding-left: 0.5rem;
+}
+
+.u2800 {
+  font-family: u2800;
+}
+
+.half-star {
+  font-size: 125%;
+  position: relative;
+  top: 2px;
+  line-height: 1rem;
+}

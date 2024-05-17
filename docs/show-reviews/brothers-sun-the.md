@@ -5,15 +5,17 @@ tags:
   - drama
   - 2020s
 title: Brothers Sun, The
+ratings:
+  entertainment: 3
+  quality: 3.5
 ---
 import DocTags from '@site/src/components/DocTags'
+import Ratings from '@site/src/components/Ratings'
 
 # The Brothers Sun
 
 <DocTags tags={ frontMatter.tags } />
-
-Quality: <span class="u2800">&#9733;&#9733;&#9733;<span class="half-star">&#11240;</span></span>
-Entertainment: <span class="u2800">&#9733;&#9733;&#9733;</span>
+<Ratings ratings={ frontMatter.ratings } />
 
 The Brothers Sun isn't bad, but it isn't great either. My main issue with the series is that it's a bit muddled. There's just no real focus. It splits it's time between the two brothers, Charles and Bruce Sun with secondary attention paid to the Mother, Mama Sun. Charles is the "action" guy, Bruce is supposed to be the "funny" guy, and Mama Sun is the "smart" one who brings a bit of palace intrigue to the story.
 

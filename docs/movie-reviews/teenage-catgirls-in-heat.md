@@ -4,15 +4,17 @@ tags:
   - bad movie
   - comedy
   - 1990s
+ratings:
+  entertainment: 3.5
+  quality: 0.5
 ---
-import DocTags from '@site/src/components/DocTags';
+import DocTags from '@site/src/components/DocTags'
+import Ratings from '@site/src/components/Ratings'
 
 # Teenage Catgirls in Heat
 
 <DocTags tags={ frontMatter.tags } />
-
-Quality: <span class="u2800 half-star">&#11240;</span>
-Entertainment: <span class="u2800">&#9733;&#9733;&#9733;<span class="half-star">&#11240;</span></span>
+<Ratings ratings={ frontMatter.ratings } />
 
 This movie is about as bad as they come. And, like many bad movies, it's refreshingly earnest. You can tell the two main characters are really having fun with their parts. As they should, as this would be their only time playing lead roles.
 
