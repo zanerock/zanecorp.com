@@ -4,15 +4,17 @@ tags:
   - anime
   - shonen
   - 2020s
+ratings:
+  entertainment: 3.5
+  quality: 4.5
 ---
 import DocTags from '@site/src/components/DocTags'
+import Ratings from '@site/src/components/Ratings'
 
 # My Hero Academia
 
 <DocTags tags={ frontMatter.tags } />
-
-Quality: <span class="u2800">&#9733;&#9733;&#9733;&#9733;<span class="half-star">&#11240;</span></span>
-Entertainment: <span class="u2800">&#9733;&#9733;&#9733;<span class="half-star">&#11240;</span></span>
+<Ratings ratings={ frontMatter.ratings } />
 
 This review is on seasons 1-4.
 

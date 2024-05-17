@@ -4,15 +4,17 @@ tags:
   - action
   - comedy
   - 2020s
+ratings:
+  entertainment: 3.5
+  quality: 4
 ---
-import DocTags from '@site/src/components/DocTags';
+import DocTags from '@site/src/components/DocTags'
+import Ratings from '@site/src/components/Ratings'
 
 # Road House (2024)
 
 <DocTags tags={ frontMatter.tags } />
-
-Quality: <span class="u2800">&#9733;&#9733;&#9733;&#9733;</span>
-Entertainment: <span class="u2800">&#9733;&#9733;&#9733;<span class="half-star">&#11240;</span></span>
+<Ratings ratings={ frontMatter.ratings } />
 
 A fast paced action, pretty standard action with some remarkable camera work and a notable score, this Jake Gyllenhaal vehicle is a lot of fun. Almost all the actors do a great job of really inhabiting their characters archetype. While there aren't really any plot surprises, the movie is sprinkled with enough humor and excellent acting so it doesn't feel flat.
 
