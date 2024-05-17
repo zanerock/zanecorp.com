@@ -6,6 +6,7 @@ tags:
   - 2020s
 ratings:
   entertainment: 3.5
+  impact: 3
   quality: 4.5
 ---
 import DocTags from '@site/src/components/DocTags'
