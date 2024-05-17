@@ -7,6 +7,7 @@ tags:
 title: Brothers Sun, The
 ratings:
   entertainment: 3
+  impact: 1.5
   quality: 3.5
 ---
 import DocTags from '@site/src/components/DocTags'

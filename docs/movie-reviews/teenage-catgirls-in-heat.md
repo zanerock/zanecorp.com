@@ -6,6 +6,7 @@ tags:
   - 1990s
 ratings:
   entertainment: 3.5
+  impact : 0
   quality: 0.5
 ---
 import DocTags from '@site/src/components/DocTags'
