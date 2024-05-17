@@ -22,6 +22,7 @@
 @import url("./brander/transitions.css");
 
 @import url("./buttons.css");
+@import url("./spoilers.css");
 
 /* @import url("./modal.global.css"); */
 
@@ -81,21 +82,4 @@ a.table-of-contents__link {
 
 html[data-theme='dark'] .light-shadow-box {
   box-shadow: unset;
-}
-
-.spoiler_alert, .end_spoiler {
-  color: red;
-  font-weight: 500;
-}
-
-details[class*="spoiler"] {
-  --ifm-alert-background-color: #ffffff;
-}
-
-details[class*="spoiler"]:before {
-  font-weight: 500;
-}
-
-details.moderate-spoiler:before {
-  content: "Moderate spoiler";
 }

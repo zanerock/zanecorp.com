@@ -1,0 +1,11 @@
+details[class*="spoiler"] {
+  --ifm-alert-background-color: #ffffff;
+}
+
+details[class*="spoiler"]:before {
+  font-weight: 500;
+}
+
+details.moderate-spoiler:before {
+  content: "Moderate spoiler";
+}
