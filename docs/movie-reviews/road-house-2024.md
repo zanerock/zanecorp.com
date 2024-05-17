@@ -2,6 +2,7 @@
 description: Fast paced action; excellent camera work.
 tags:
   - action
+  - comedy
   - 2020s
 ---
 import DocTags from '@site/src/components/DocTags';
