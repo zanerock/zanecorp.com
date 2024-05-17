@@ -1,6 +1,6 @@
 :root {
   /* brand colors */
-  /* #ffffff */
+  /* #ffffff white */
   --ll-background-color-hue: 0;
   --ll-background-color-saturation: 0%;
   --ll-background-color-lightness: 100%;
@@ -8,12 +8,14 @@
   --ll-background-color-transparent: #ffffff00;
   --ll-background-color-opaque: #ffffffff;
 
-  /* #21327d; Liquid Labs Blue */
+  /* #000000 black */
   --ll-color-primary-hue: 0;
   --ll-color-primary-saturation: 0%;
   --ll-color-primary-lightness: 0%;
 
   --ifm-color-content-secondary: #000000;
+
+  --ll-color-primary-lightness-key: 50%;
 
   /* brand fonts */
   --ifm-font-color-base: var(--ifm-color-primary);
