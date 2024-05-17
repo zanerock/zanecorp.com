@@ -11,7 +11,7 @@ import DocTags from '@site/src/components/DocTags'
 
 <DocTags tags={ frontMatter.tags } />
 
-Quality: <span class="u2800">&#9733;&#9733;&#9733;&#9733;&#11240;</span>
+Quality: <span class="u2800">&#9733;&#9733;&#9733;&#9733;<span class="half-star">&#11240;</span></span>
 Entertainment: <span class="u2800">&#9733;&#9733;&#9733;<span class="half-star">&#11240;</span></span>
 
 This review is on seasons 1-4.
