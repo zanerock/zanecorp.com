@@ -8,6 +8,12 @@ ratings:
   entertainment: 3.5
   impact : 0
   quality: 0.5
+cast-and-crew:
+  actors:
+    director: Scott Perry
+    actors:
+      - Dave Cox
+      - Gary Graves
 ---
 import DocTags from '@site/src/components/DocTags'
 import Ratings from '@site/src/components/Ratings'
@@ -45,3 +51,4 @@ I really wish they'd been more clever about the "lady cats". Like, they kinda wa
 
 The movie is lots of fun, however, and easy to riff over. I probably would have given four, maybe four and a half stars for entertainment if it weren't for the quality problems. The high pitched voices themselves were a little entertaining, but overall I'd rather have watched a standard quality version.
 
+Watched: 2024-05-10

@@ -8,6 +8,13 @@ ratings:
   entertainment: 3.5
   impact: 1
   quality: 4
+cast-and-crew:
+  actors:
+    - Jake Gyllenhaal
+    - Conor McGregor
+    - Daniela Melchior
+  director:
+    - Dough Liman
 ---
 import DocTags from '@site/src/components/DocTags'
 import Ratings from '@site/src/components/Ratings'
@@ -17,7 +24,7 @@ import Ratings from '@site/src/components/Ratings'
 <DocTags tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
-A fast paced action, pretty standard action with some remarkable camera work and a notable score, this Jake Gyllenhaal vehicle is a lot of fun. Almost all the actors do a great job of really inhabiting their characters archetype. While there aren't really any plot surprises, the movie is sprinkled with enough humor and excellent acting so it doesn't feel flat.
+A fast paced action, pretty standard action thriller with some remarkable camera work and a notable score, this Jake Gyllenhaal vehicle is a lot of fun. Almost all the actors do a great job of really inhabiting their characters archetype. While there aren't really any plot surprises, the movie is sprinkled with enough humor and excellent acting so it doesn't feel flat.
 
 Let's start with the characters. First off, Jake Gyllenhaal—Jake—and the final boss, played by Conor McGregor—Knox, are absolutely jacked. Though I watched his career as an MMA fighter, I didn't even recognize McGregor. Even his face put on extra bulk and is much rounder than it used to be. As mentioned, both are excellently done with McGregor really shining as the psychotic brawler and Gylenhaal delivering a fun and often funny performance. For the most part, the side characters are pretty strong as well, with Daniela Melchior—Ellie—as the no-nonsense nurse/love interest, Billy Magnussen—Ben Brandt—as the spoiled rich kid villain, and Hannah Lanier—Charlie—as the lovable and pragmatic kid.
 
@@ -32,3 +39,5 @@ My other big problem was the portrayal of Glass Key (a fictional island in the F
 Finally, I think they could have dropped, or maybe toned down Jake's tragic backstory. It's not hard to guess that he killed someone in a fight and it supposedly haunts him, but aside from his first appearance as an underground fighter and making a weak attempt to push away Ellie—the love interest—at one point (before quickly giving in), he never really acts all that moody or broken. He's rather polite, often humorous, and appears to be enjoying his life for the most part. They do insert some dreams—which give us flashbacks to the killing—but again, it's more tell than show. Really, they just needed to make him a down on his luck fighter and leaned into the happy go lucky aspects of the character more.
 
 All in all, a thoroughly enjoyable action movie, though. For people that appreciate fight scene choreography, I'd say this is a must see for the camera work alone. The characters are all well acted and there are no serious plot holes. Plus, it's got music and humor well woven into the story. A solid action movie.
+
+Watched: 2024-05-13
