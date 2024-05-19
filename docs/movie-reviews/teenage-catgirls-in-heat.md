@@ -10,7 +10,8 @@ ratings:
   quality: 0.5
 cast-and-crew:
   actors:
-    director: Scott Perry
+    directors:
+      - Scott Perry
     actors:
       - Dave Cox
       - Gary Graves

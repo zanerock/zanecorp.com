@@ -6,7 +6,7 @@ tags:
   - 2020s
 ratings:
   entertainment: 3.5
-  impact: 3
+  impact: 3.5
   quality: 4.5
 cast-and-crew:
   writers:
