@@ -6,7 +6,7 @@ tags:
   - 2020s
 title: Brothers Sun, The
 ratings:
-  entertainment: 3
+  entertainment: 2.5
   impact: 1.5
   quality: 3.5
 cast-and-crew:
