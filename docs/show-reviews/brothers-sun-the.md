@@ -9,6 +9,11 @@ ratings:
   entertainment: 3
   impact: 1.5
   quality: 3.5
+cast-and-crew:
+  actors:
+    - Justin Chien
+    - Sam Li
+    - Michelle Yeoh
 ---
 import DocTags from '@site/src/components/DocTags'
 import Ratings from '@site/src/components/Ratings'
@@ -33,3 +38,4 @@ So, the boxers are this righteous counter-gang who fight against the evil triads
 
 In summary, it would have been better to just drop the comedic elements or go with a more dry humor. There's some interesting bits, but it's too unfocused. It would have been better to focus more on Mama's political maneuvering or how Charles is trapped in a life he really doesn't want. The Bruce character should have been a secondary spectator or completely reworked.
 
+Watched (last episode): 2024-05-16

@@ -8,6 +8,9 @@ ratings:
   entertainment: 3.5
   impact: 3
   quality: 4.5
+cast-and-crew:
+  writers:
+    - Kōhei Horikoshi
 ---
 import DocTags from '@site/src/components/DocTags'
 import Ratings from '@site/src/components/Ratings'
@@ -38,3 +41,5 @@ My only criticism is that I would like to see more done with the villains. The m
 The villains in general come off as "just evil". The ones that aren't just "plain psychotic" often espouse some philosophy, but for the most part they seem to be just doing "bad stuff because" and their philosophy doesn't really come into the story or seem to affect their actions much. The big exception is Chizome Akaguro, or Hero Killer. While he lacks a backstory, he does have a consistent philosophy that does come into the story at key points.
 
 Still, with excellent pacing and production values, good writing, and above average action scenes, this is definitely one to add to any shonen fan's watch list.
+
+Watched (last episode): 2024-05-14
