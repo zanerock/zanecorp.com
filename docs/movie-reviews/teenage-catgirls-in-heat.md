@@ -6,8 +6,8 @@ tags:
   - 1990s
 ratings:
   entertainment: 3.5
-  impact : 0
-  quality: 0.5
+  impact : 1
+  quality: 1
 cast-and-crew:
   actors:
     directors:

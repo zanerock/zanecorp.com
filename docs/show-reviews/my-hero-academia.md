@@ -6,8 +6,8 @@ tags:
   - 2020s
 ratings:
   entertainment: 3.5
-  impact: 3.5
-  quality: 4.5
+  impact: 3
+  quality: 3.5
 cast-and-crew:
   writers:
     - Kōhei Horikoshi

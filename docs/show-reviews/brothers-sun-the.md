@@ -7,8 +7,8 @@ tags:
 title: Brothers Sun, The
 ratings:
   entertainment: 2.5
-  impact: 1.5
-  quality: 3.5
+  impact: 1
+  quality: 3
 cast-and-crew:
   actors:
     - Justin Chien
