@@ -10,7 +10,6 @@ For entertainment and quality, two and a half stars (<span class="u2800">★★<
 
 A good action or horror movie tends to be entertaining, but low impact. Good dramas tend to be less entertaining, but higher on impact. Quality is genre independent.
 
-"
 |Stars|Entertainment|Impact|Quality|
 |-----|-------------|------|-------|
 <span class="u2800">★★★★★</span>|Mind blowing|Touched my soul|Sublime|
