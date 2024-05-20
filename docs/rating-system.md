@@ -10,41 +10,17 @@ For entertainment and quality, two and a half stars (<span class="u2800">★★<
 
 A good action or horror movie tends to be entertaining, but low impact. Good dramas tend to be less entertaining, but higher on impact. Quality is genre independent.
 
-<table>
-  <tr>
-    <th>Stars</th><th>Entertainment</th><th>Impact</th><th>Quality</th>
-  </tr>
-  <tr>
-    <td class="u2800">★★★★★</td><td>Mind blowing</td><td>Touched my soul</td><td>Sublime</td>
-  </tr>
-  <tr>
-    <td class="u2800">★★★★<span class="half-star">⯨</span></td><td>Astonishing</td><td>Breathtaking</td><td>Notable achievement</td>
-  </tr>
-  <tr>
-    <td class="u2800">★★★★</td><td>Awesome</td><td>Inspirational</td><td>Exceptional craftsmanship</td>
-  </tr>
-  <tr>
-    <td class="u2800">★★★<span class="half-star">⯨</span></td><td>Exciting</td><td>Stirring</td><td>Premium craftsmanship</td>
-  </tr>
-  <tr>
-    <td class="u2800">★★★</td><td>Quite good</td><td>Affecting</td><td>Well made</td>
-  </tr>
-  <tr>
-    <td class="u2800">★★<span class="half-star">⯨</span></td><td>Good enough</td><td>Engaging</td><td>Competent</td>
-  </tr>
-  <tr>
-    <td class="u2800">★★</td><td>Ddin't hate it</td><td>Worth a chat</td><td>Mediocre</td>
-  </tr>
-  <tr>
-    <td class="u2800">★<span class="half-star">⯨</span></td><td>Boring</td><td>Worth a thought</td><td>Notably flawed</td>
-  </tr>
-  <tr>
-    <td class="u2800">★</td><td>Bad</td><td>Forgettable</td><td>Sad</td>
-  </tr>
-  <tr>
-    <td class="u2800"><span class="half-star">⯨</span></td><td>Terrible</td><td>Ehh</td><td>Utter failure</td>
-  </tr>
-  <tr>
-    <td class="u2800">☆</td><td>Kick in the nuts</td><td>None</td><td>Atrocious</td>
-  </tr>
-</table>
+"
+|Stars|Entertainment|Impact|Quality|
+|-----|-------------|------|-------|
+<span class="u2800">★★★★★</span>|Mind blowing|Touched my soul|Sublime|
+<span class="u2800">★★★★<span class="half-star">⯨</span></span>|Astonishing|-|Notable achievement|
+<span class="u2800">★★★★</span>|Awesome|Inspirational|Exceptional craftsmanship|
+<span class="u2800">★★★<span class="half-star">⯨</span></span>|Exciting|-|Premium craftsmanship|
+<span class="u2800">★★★</span>|Quite good|Affecting|Well made|
+<span class="u2800">★★<span class="half-star">⯨</span></span>|Good enough|-|Competent|
+<span class="u2800">★★</span>|Didn't hate it|Chat worthy|Mediocre|
+<span class="u2800">★<span class="half-star">⯨</span></span>|Boring|-|Notably flawed|
+<span class="u2800">★</span>|Bad|Forgettable|Sad|
+<span class="u2800"><span class="half-star">⯨</span></span>|Terrible|-|Utter failure|
+<span class="u2800">☆</span>|Kick in the nuts|None|Atrocious|

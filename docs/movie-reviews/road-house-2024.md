@@ -7,7 +7,7 @@ tags:
 ratings:
   entertainment: 3.5
   impact: 1
-  quality: 4
+  quality: 3.5
 cast-and-crew:
   actors:
     - Jake Gyllenhaal
