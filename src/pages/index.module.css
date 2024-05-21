@@ -50,8 +50,12 @@
     visibility: visible;
   }
 
-  :global(.navbar__logo) {
+  :global(nav:has(+ .homePage) .navbar__logo) {
     visibility: hidden;
+  }
+
+  :global(.navbar__items .navbar__logo) {
+    transform: scale(0.70);
   }
 }
 
