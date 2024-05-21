@@ -18,7 +18,7 @@ A good action or horror movie tends to be entertaining, but low impact. Good dra
 <span class="u2800">★★★<span class="half-star">⯨</span></span>|Exciting|-|Premium craftsmanship|
 <span class="u2800">★★★</span>|Quite good|Affecting|Well made|
 <span class="u2800">★★<span class="half-star">⯨</span></span>|Good enough|-|Competent|
-<span class="u2800">★★</span>|Didn't hate it|Chat worthy|Mediocre|
+<span class="u2800">★★</span>|Didn't hate it|Inspires a thought or two|Mediocre|
 <span class="u2800">★<span class="half-star">⯨</span></span>|Boring|-|Notably flawed|
 <span class="u2800">★</span>|Bad|Forgettable|Sad|
 <span class="u2800"><span class="half-star">⯨</span></span>|Terrible|-|Utter failure|

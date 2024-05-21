@@ -3,11 +3,11 @@ description: A heist movie that goes nowhere.
 tags:
   - drama
   - mystery
-  - 2020s
+  - 2010s
 title: Trust, The
 ratings:
-  entertainment: 2
-  impact: 2
+  entertainment: 2.5
+  impact: 1
   quality: 3.5
 cast-and-crew:
   actors:

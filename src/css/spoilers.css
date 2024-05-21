@@ -6,6 +6,36 @@ details[class*="spoiler"]:before {
   font-weight: 500;
 }
 
+details.minor-spoiler:before {
+  content: "Minor spoiler";
+}
+
 details.moderate-spoiler:before {
   content: "Moderate spoiler";
+}
+
+details.major-spoiler:before {
+  content: "Major spoiler";
+}
+
+span[class*="spoiler"] {
+  background-color: #000000;
+  color: transparent;
+}
+
+/* I wanted an effect where the instructions would disappear and the text would appear is if the before content was 
+  'display: none', but could not find reliable way to pull it off */
+span[class*="spoiler"]:before {
+  color: #ffffff;
+  padding-left: 0.25rem;;
+}
+
+span.minor-spoiler:before {
+  color: red;
+  content: "Minor spoiler: hover or click to reveal. ";
+}
+
+span[class*="spoiler"]:hover, span[class*="spoiler"]:active {
+  color: #000000;
+  background-color: #ffffff;
 }
