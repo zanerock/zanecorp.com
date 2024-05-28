@@ -43,6 +43,6 @@ Of course Cage accepts the ridiculous offer of $1,000 for one nights cleaning an
 
 Perhaps the biggest flaw in the movie is when it's revealed that the towns folk have made a deal with animatronic horrors. Like... why? Why not just burn the place down. The sheriff explains this away with "we would have lost too many battling those things", but why? Just burn it down. Sure. the creatures have killed, but that was by using stealth and while strong. they're clearly shown to be vulnerable to physical destruction. It would have made a lot more sense if they'd made the deal and gotten something out of it, like wealth or secret powers of the occult or something. They just give the robots way too much credit.
 
-The movie has some fun bits, some interesting characters, but is ultimately a bit too caught up in being in it's own stylization and a bit too silly. The kids are a bit too dumb, the adults a bit too irrational, and the fights are way too easy.
+The movie has some fun bits, some interesting characters, but is ultimately a bit too caught up in it's own stylization and a bit too silly. The kids are a bit too dumb, the adults a bit too irrational, and the fights are way too easy.
 
 Watched: 2024-05-22
