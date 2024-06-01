@@ -101,3 +101,11 @@ details {
   border: 1px solid black !important;
   border-radius: 0 !important;
 }
+
+div.whimsy-pic {
+  text-align: center;
+}
+
+div.whimsy-pic img {
+  max-height: 80vh;
+}

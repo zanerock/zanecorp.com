@@ -63,6 +63,21 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'whimsies',
+        path: 'whimsies',
+        routeBasePath: 'whimsies',
+        sidebarPath: './sidebarsWhimsies.js',
+        editUrl:
+            'https://github.com//zanerock/zanecorp.com/tree/main/',
+        showLastUpdateTime: true,
+      },
+    ]
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -87,6 +102,13 @@ const config = {
             sidebarId: 'reviewsSidebar',
             position: 'left',
             label: 'Reviews',
+          },
+          {
+            type: 'docSidebar',
+            docsPluginId: 'whimsies',
+            sidebarId: 'whimsies',
+            position: 'left',
+            label: 'Whimsies',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
