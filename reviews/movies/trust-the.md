@@ -22,7 +22,7 @@ import Ratings from '@site/src/components/Ratings'
 
 # The Trust
 
-<DocTags tags={ frontMatter.tags } />
+<DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
 The Trust is An initially intriguing heist movie that ultimately goes nowhere. It's actually confusing; like, you might think you're missing something, but really, there's just nothing there.

@@ -17,7 +17,7 @@ import Ratings from '@site/src/components/Ratings'
 
 # My Hero Academia
 
-<DocTags tags={ frontMatter.tags } />
+<DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
 This review is on seasons 1-4.

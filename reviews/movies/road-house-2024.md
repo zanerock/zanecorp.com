@@ -21,7 +21,7 @@ import Ratings from '@site/src/components/Ratings'
 
 # Road House (2024)
 
-<DocTags tags={ frontMatter.tags } />
+<DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
 A fast paced action, pretty standard action thriller with some remarkable camera work and a notable score, this Jake Gyllenhaal vehicle is a lot of fun. Almost all the actors do a great job of really inhabiting their characters archetype. While there aren't really any plot surprises, the movie is sprinkled with enough humor and excellent acting so it doesn't feel flat.

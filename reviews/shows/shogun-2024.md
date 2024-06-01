@@ -24,7 +24,7 @@ import Ratings from '@site/src/components/Ratings'
 
 # Shogun (2024)
 
-<DocTags tags={ frontMatter.tags } />
+<DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
 This review is on season 1.

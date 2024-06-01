@@ -19,7 +19,13 @@ cast-and-crew:
   directors:
     - Paul Schrader
 ---
+import DocTags from '@site/src/components/DocTags'
+import Ratings from '@site/src/components/Ratings'
+
 # Dying for the Light
+
+<DocTags basePath="reviews" tags={ frontMatter.tags } />
+<Ratings ratings={ frontMatter.ratings } />
 
 Sidelined after enduring unspeakable torture and suffering from PTSD, CIA agent Evan Lake goes rouge in order to avenge himself. And with Nicolas Cage playing said agent, you'd think it's a can't miss recipe for an action thriller. And you'd be wrong!
 

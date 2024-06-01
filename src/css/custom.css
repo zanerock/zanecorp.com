@@ -101,3 +101,22 @@ details {
   border: 1px solid black !important;
   border-radius: 0 !important;
 }
+
+div.whimsy-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.whimsy-gallery img {
+  max-height: 40vh;
+  margin: 0 10px 10px 0;
+}
+
+div.whimsy-pic {
+  text-align: center;
+}
+
+div.whimsy-pic img {
+  max-height: 80vh;
+}
