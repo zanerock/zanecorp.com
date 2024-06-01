@@ -22,7 +22,7 @@ import Ratings from '@site/src/components/Ratings'
 
 # Dream Scenario
 
-<DocTags tags={ frontMatter.tags } />
+<DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
 In this A24 fantasy-drama, an awkward, sub-par professor at a rando university suddenly starts showing up in people's dreams all around the world. At first, he just stands around in the dreams because that what he's like in real life. <span class="minor-spoiler">Later, after an embarrassing experience with a fan, he becomes angry and his actions in the dreams turn violent just as the world turns against him.</span> It becomes apparent that his dream presence tracks the state of his psyche, which is ultimately quite simplistic and predictable.

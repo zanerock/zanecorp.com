@@ -20,7 +20,7 @@ import Ratings from '@site/src/components/Ratings'
 
 # The Brothers Sun
 
-<DocTags tags={ frontMatter.tags } />
+<DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
 The Brothers Sun isn't bad, but it isn't great either. My main issue with the series is that it's a bit muddled. There's just no real focus. It splits it's time between the two brothers, Charles and Bruce Sun with secondary attention paid to the Mother, Mama Sun. Charles is the "action" guy, Bruce is supposed to be the "funny" guy, and Mama Sun is the "smart" one who brings a bit of palace intrigue to the story.

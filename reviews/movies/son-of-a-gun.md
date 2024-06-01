@@ -22,7 +22,13 @@ cast-and-crew:
   distributors:
     - A24
 ---
+import DocTags from '@site/src/components/DocTags'
+import Ratings from '@site/src/components/Ratings'
+
 # Son of a Gun
+
+<DocTags basePath="reviews" tags={ frontMatter.tags } />
+<Ratings ratings={ frontMatter.ratings } />
 
 A gritty, stylish action crime drama starring Ewan McGregor as Brendan and Brenton Thwaites as his apprentice, JR. The movie is amazingly consistent all the way through; there's always something happening at a kinda medium pace. Though it never seems to be moving all that fast, you look back and realize a lot has happened in a mere 1 hr and 48 min.
 

@@ -23,7 +23,7 @@ import Ratings from '@site/src/components/Ratings'
 
 # Teenage Catgirls in Heat
 
-<DocTags tags={ frontMatter.tags } />
+<DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
 This movie is about as bad as they come. And, like many bad movies, it's refreshingly earnest. You can tell the two main characters are really having fun with their parts. As they should, as this would be their only time playing lead roles.

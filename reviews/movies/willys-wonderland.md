@@ -24,7 +24,7 @@ import Ratings from '@site/src/components/Ratings'
 
 # Willy's Wonderland
 
-<DocTags tags={ frontMatter.tags } />
+<DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
 It's the story of a creepy Chucky Cheese style pizzeria complete with creepy, murderous animatronic robots. The film is basically Five Night's at Freddy's[^1] in the style of Army of Darkness. Nic Cage, as the entirely silent "The Janitor", does a good job playing himself and the stylized tone isn't bad, though ultimately the movie is a bit too silly and way too predictable to be scary.
