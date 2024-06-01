@@ -52,7 +52,7 @@ function HomepageHeader() {
           </div>
           <div id='homepage-button-container' className={clsx(styles['button-container'])}>
             <Link className={clsx('button', styles['nav-button'])} to="/reviews/rating-system">Reviews</Link>
-            <Link className={clsx('button', styles['nav-button'])} to="/whimsies">Whimsies</Link>
+            <Link className={clsx('button', styles['nav-button'])} to="/whimsies/a-collection-of-whimsies">Whimsies</Link>
             <Link className={clsx('button', styles['nav-button'])} to="/blog">Blog</Link>
           </div>
         </div>
