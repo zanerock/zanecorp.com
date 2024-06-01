@@ -1,8 +1,10 @@
 ---
 description: Confusing, poorly made, and lots of fun.
 tags:
-  - bad movie
+  - bad
   - comedy
+  - earnest
+  - riffable
   - 1990s
 ratings:
   entertainment: 3.5

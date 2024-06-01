@@ -83,3 +83,21 @@ a.table-of-contents__link {
 html[data-theme='dark'] .light-shadow-box {
   box-shadow: unset;
 }
+
+trigger-warning { 
+  display: block;
+  border: 1px solid red;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+trigger-warning:before {
+  color: red;
+  font-weight: 600;
+  content: "TRIGGER WARNINGS";
+}
+
+details {
+  border: 1px solid black !important;
+  border-radius: 0 !important;
+}
