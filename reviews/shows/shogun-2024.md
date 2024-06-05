@@ -27,6 +27,12 @@ import Ratings from '@site/src/components/Ratings'
 <DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
+<trigger-warning>
+  <ol>
+    <li>Violence and murder.</li>
+  </ol>
+</trigger-warning>
+
 This review is on season 1.
 
 Shogun is the story of Lord Toranaga and his quest to become Shogun (more or less military dictator) of Japan. Much of the action involves feudal Japanese politics (or at least a fictionalized version thereof) and it's fascinating. An English ship's pilot and his ship and dozen or so cannon are injected into tho situation by way of shipwreck. In the backdrop lurk the Portuguese and their monopoly on trade with Japan which the English pilot, John Blackthorne ably played by Cosmo Jarvis is intent on breaking. Many of the elements of the story are true to life, though Shogun is historically inspired rather than historically accurate in terms of plot

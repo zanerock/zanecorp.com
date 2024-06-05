@@ -23,6 +23,12 @@ import Ratings from '@site/src/components/Ratings'
 <DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
+<trigger-warning>
+  <ol>
+    <li>Violence and murder.</li>
+  </ol>
+</trigger-warning>
+
 The Brothers Sun isn't bad, but it isn't great either. My main issue with the series is that it's a bit muddled. There's just no real focus. It splits it's time between the two brothers, Charles and Bruce Sun with secondary attention paid to the Mother, Mama Sun. Charles is the "action" guy, Bruce is supposed to be the "funny" guy, and Mama Sun is the "smart" one who brings a bit of palace intrigue to the story.
 
 The action is quite good, but not sufficient to carry the show. It's billed as an "action/drama/comedy", though I didn't really find it funny. In part because the supposedly comedic Bruce character is not very funny and his main attribute is just weakness. This is no fault of Sam Li, who portrays Bruce; his character is just wishy-washy. In theory he's supposed to be the most relatable, but he's just kinda pulled along for the most part until the very end (which _is_ kinda clever). The character really needs to be more of something; more bumbling, more clever, more substantial, more _something_.

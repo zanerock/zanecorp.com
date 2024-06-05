@@ -27,6 +27,12 @@ import Ratings from '@site/src/components/Ratings'
 <DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
+<trigger-warning>
+  <ol>
+    <li>People get shot.</li>
+  </ol>
+</trigger-warning>
+
 Sidelined after enduring unspeakable torture and suffering from PTSD, CIA agent Evan Lake goes rouge in order to avenge himself. And with Nicolas Cage playing said agent, you'd think it's a can't miss recipe for an action thriller. And you'd be wrong!
 
 The story just never comes together. Evan's frontotemporal dementia is supposed to... make us sympathetic? add poignancy? But it just ends up being distracting. His big speech at the beginning of the movie about how the CIA is all about (get this) "values" is really try hard. It's really slow, with maybe a good 25% of the movie spent on the whole dementia thing. Like, they really hammer it.
