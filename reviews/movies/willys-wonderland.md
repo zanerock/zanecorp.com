@@ -27,6 +27,13 @@ import Ratings from '@site/src/components/Ratings'
 <DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
+<trigger-warning>
+  <ol>
+    <li>Some gore.</li>
+    <li>Teenagers are killed.</li>
+  </ol>
+</trigger-warning>
+
 It's the story of a creepy Chucky Cheese style pizzeria complete with creepy, murderous animatronic robots. The film is basically Five Night's at Freddy's[^1] in the style of Army of Darkness. Nic Cage, as the entirely silent "The Janitor", does a good job playing himself and the stylized tone isn't bad, though ultimately the movie is a bit too silly and way too predictable to be scary.
 
 [^1]: While the Five Night's at Freddy's movie was released in 2023, two years after Willy's Wonderland, the game franchise has been around since 2014 and seems a very likely influence.

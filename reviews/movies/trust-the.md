@@ -25,7 +25,14 @@ import Ratings from '@site/src/components/Ratings'
 <DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
-The Trust is An initially intriguing heist movie that ultimately goes nowhere. It's actually confusing; like, you might think you're missing something, but really, there's just nothing there.
+<trigger-warning>
+  <ol>
+    <li>Violence and murder.</li>
+    <li>A woman is tied up and restrained against her will.</li>
+  </ol>
+</trigger-warning>
+
+The Trust is an initially intriguing heist movie that ultimately goes nowhere. It's actually confusing; like, you might think you're missing something, but really, there's just nothing there.
 
 Nicholas Cage—essentially playing himself, as always—and Elijah Wood are both quite good. The directing is fine. The dialog is well done. Really, everything about the movie is pretty good except it doesn't seem to have any point.
 

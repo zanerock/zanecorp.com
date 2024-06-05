@@ -24,6 +24,12 @@ import Ratings from '@site/src/components/Ratings'
 <DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
+<trigger-warning>
+  <ol>
+    <li>General violence.</li>
+  </ol>
+</trigger-warning>
+
 A fast paced action, pretty standard action thriller with some remarkable camera work and a notable score, this Jake Gyllenhaal vehicle is a lot of fun. Almost all the actors do a great job of really inhabiting their characters archetype. While there aren't really any plot surprises, the movie is sprinkled with enough humor and excellent acting so it doesn't feel flat.
 
 Let's start with the characters. First off, Jake Gyllenhaal—Jake—and the final boss, played by Conor McGregor—Knox, are absolutely jacked. Though I watched his career as an MMA fighter, I didn't even recognize McGregor. Even his face put on extra bulk and is much rounder than it used to be. As mentioned, both are excellently done with McGregor really shining as the psychotic brawler and Gylenhaal delivering a fun and often funny performance. For the most part, the side characters are pretty strong as well, with Daniela Melchior—Ellie—as the no-nonsense nurse/love interest, Billy Magnussen—Ben Brandt—as the spoiled rich kid villain, and Hannah Lanier—Charlie—as the lovable and pragmatic kid.

@@ -30,6 +30,12 @@ import Ratings from '@site/src/components/Ratings'
 <DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
+<trigger-warning>
+  <ol>
+    <li>Violence and murder.</li>
+  </ol>
+</trigger-warning>
+
 A gritty, stylish action crime drama starring Ewan McGregor as Brendan and Brenton Thwaites as his apprentice, JR. The movie is amazingly consistent all the way through; there's always something happening at a kinda medium pace. Though it never seems to be moving all that fast, you look back and realize a lot has happened in a mere 1 hr and 48 min.
 
 Though there are a couple plot points (how did the guy in Melbourne know exactly when the hand off was going to be?), they're barely noticeable as Brendon navigates smoothly from one problem to the next. In some ways, it's like a bunch of little vignettes, seamlessly joined together. <span class="moderate-spoiler">Now a prison break. Now a heist. Now a double cross. Now revenge. Etc.</span> The movie does a good job of sprinkling in little details side shows without ever getting bogged down in anything. It's actually a pretty interesting narrative structure.

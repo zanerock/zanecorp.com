@@ -20,6 +20,12 @@ import Ratings from '@site/src/components/Ratings'
 <DocTags basePath="reviews" tags={ frontMatter.tags } />
 <Ratings ratings={ frontMatter.ratings } />
 
+<trigger-warning>
+  <ol>
+    <li>Cartoon violence.</li>
+  </ol>
+</trigger-warning>
+
 This review is on seasons 1-4.
 
 A well made, fairly standard shonen anime with good pacing and some nice touches, this is the story of Izuku Midoriya, a powerless boy in a wold of superheros who comes to inherit the power of the greatest superhero of them all. The original manga is written and illustrated by Kōhei Horikoshi.
