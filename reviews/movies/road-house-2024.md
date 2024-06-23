@@ -13,7 +13,7 @@ cast-and-crew:
     - Jake Gyllenhaal
     - Conor McGregor
     - Daniela Melchior
-  director:
+  directors:
     - Dough Liman
 ---
 import DocTags from '@site/src/components/DocTags'

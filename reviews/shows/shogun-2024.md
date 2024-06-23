@@ -13,7 +13,7 @@ ratings:
 3rd-party-ratings:
   imbd: 8.7
   rotten-tomatoes: 99%
-  metacritic: 85
+  metacritic: 85%
 cast-and-crew:
   actors:
     - Cosmo Jarvis
