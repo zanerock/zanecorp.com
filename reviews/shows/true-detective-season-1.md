@@ -43,4 +43,13 @@ True Detective is quite well made. Detective Marty Hart (Woody Harrelson) and Ru
 
 True Detective does a good job earning it's grit. And the motivations of the characters, especially Rust Chole, are both clear and compelling. It's an excellent character drama combined with a decent mystery.
 
+<details className="minor-spoiler">
+  <summary>Regarding Cohle's character development.</summary>
+
+At the very end, when Marty and Rust are looking up at the sky and Rust says the oldest story is "light vs dark". Then Marty looks up at the night sky and says: “Well, I know we ain’t in Alaska, but it appears to me that the dark has a lot more territory.” Rust says Marty has it wrong and explains, “Well, once there was only dark. You ask me, the light’s winning.”
+
+This is almost exactly a scene from Alan Moore's Top 10 when (as I remember) a Knight Chessman and the Porter are dying together. The Chessman talks about how he fights for the light against the dark, the Porter looks up and says, "Looks like the dark is winning". To which the Chessman replies, "No, there used to be only dark."
+
+</details>
+
 Completed: 2024-06-23
