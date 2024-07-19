@@ -1,5 +1,5 @@
 ---
-description: A gritty crime drama... in Australia!.
+description: A gritty crime drama... in Australia!
 tags:
   - action
   - crime
