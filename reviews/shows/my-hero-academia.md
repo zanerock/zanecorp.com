@@ -3,6 +3,7 @@ description: Well executed nobody to somebody shonen.
 tags:
   - anime
   - shonen
+  - Japanese
   - 2020s
 ratings:
   entertainment: 3.5

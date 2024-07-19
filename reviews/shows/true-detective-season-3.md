@@ -11,13 +11,13 @@ ratings:
 3rd-party-ratings:
   imbd: 8.9
   rotten-tomatoes: 78%
-  metacritic: 75
+  metacritic: 75%
 cast-and-crew:
   actors:
     - Mahershala Ali
     - Carmen Ejogo
     - Stephen Dorff
-  writer:
+  writers:
     - Nic Pizzolatto
 ---
 import DocTags from '@site/src/components/DocTags'
