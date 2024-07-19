@@ -18,7 +18,7 @@ cast-and-crew:
     - Taylor Kitsch
     - Kelly Reilly
     - Vince Vaughn
-  writer:
+  writers:
     - Nic Pizzolatto
 ---
 import DocTags from '@site/src/components/DocTags'
