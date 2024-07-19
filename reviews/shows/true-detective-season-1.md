@@ -5,7 +5,7 @@ tags:
   - mystery
   - 2010s
 ratings:
-  entertainment: 3
+  entertainment: 3.5
   impact: 3
   quality: 3.5
 3rd-party-ratings:
@@ -18,7 +18,7 @@ cast-and-crew:
     - Matthew McConaughey
   directors:
     - Cary Joji Fukunaga
-  writer:
+  writers:
     - Nic Pizzolatto
 ---
 import DocTags from '@site/src/components/DocTags'
