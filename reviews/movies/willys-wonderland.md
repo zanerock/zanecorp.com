@@ -44,7 +44,7 @@ In the meantime, we're introduced to Liv (played by Emily Tosta), who's intent o
 
 While not a big problem for the genre in general, the movie is riddled with a bit too many ridiculous plot points; the first of which is that the back woods micro-town mechanic have specialized 20" sports tires in stock. Lacking the cash to pay for repairs, he's offered a deal: stay overnight at the boarded up Willy's Wonderland and clean the place up and the Boss Hog style owner, Tex Macadoo (played by Ric Reitz) will foot the bill and Cage can be on his way.
 
-Of course Cage accepts the ridiculous offer of $1,000 for one nights cleaning and good 10% or so of the movie is spent on cleaning montages which are honestly not the worst thing about the movie. Cage is incredibly efficient.
+Of course Cage accepts the ridiculous offer of $1,000 for one nights cleaning and a good 10% or so of the movie is spent on cleaning montages which are honestly not the worst thing about the movie. Cage is incredibly efficient.
 
 <span color="red">What follows contains unredacted spoilers</span>, but like I said, the movie is predictable enough I don't think I'm giving too much away. Cage ends up fighting the possessed animatronic robots, easily beating each one, despite their previously having shown super-human strength and special powers which, for some reason, they never use on Cage.
 
