@@ -1,6 +1,6 @@
 ---
 authors: zane
-tags: [movie review]
+tags: [show review]
 ---
 # Zane Reviews True Detective Season 3
 
