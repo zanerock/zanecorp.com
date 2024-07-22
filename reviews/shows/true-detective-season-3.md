@@ -50,3 +50,5 @@ One of the big strong suites of the story, on the other hand, is the relationshi
 Ultimately, however, the story is marred by the unnecessarily baroque and highly improbable resolution to the case. <span class="major-spoiler">Julie was kidnapped and held prisoner to satisfy the desires of an insane heiress, only to escape to a covenant where she's reunited with her childhood friend and one true love. So, the nuns conspire to fake her death to set her free. I mean, come on. Especially since the faked death seems unnecessary. Everyone that would have cared was already dead, and it's not really clear that anyone was actually after her in the first place.</span>
 
 Overall, though, it's a strong piece of compelling drama. Though it's arguably the most tragic of the (currently) 4 seasons, like the first, it ends on an upbeat note. While I think the dementia angle is a little distracting, it's more of a wasted opportunity than a glaring flaw and overall the story is tight and moves with purpose.
+
+Watched June 2024
