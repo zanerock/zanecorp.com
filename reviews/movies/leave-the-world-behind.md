@@ -43,4 +43,6 @@ As things develop further, it becomes apparent that things are worse than they m
 
 On the technical side, there's actually lots of interesting camerawork. There's one technical trick they really lean into, with long continuous shots that smoothly pass through solid objects. Like, with computers and everything it's not especially impressive, but they do a good job and use it to good effect. They also twist shot, so we're looking at things upside down, and other small things that lend and air of unease and a tinge of the surreal. It's well directed and the actors all give a solid, better than average performance. It's a movie you can really immerse yourself in.
 
+<span class="minor-spoiler">I also like the scene with all the busted up Teslas used as weapons of war. Whether or not it's intentional, I really appreciate the recognition that Teslas are actually pretty slipshod and very likely vulnerable to just that kind of attack. Elon Musk is a very successful con man.</span>
+
 Watched: September 5th, 2024
