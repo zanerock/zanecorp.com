@@ -1,5 +1,5 @@
 ---
-escription: A completely un-self aware, generic action movie.
+description: A completely un-self aware, generic action movie.
 tags:
   - action
   - sci-fi
