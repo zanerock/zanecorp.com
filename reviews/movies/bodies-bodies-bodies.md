@@ -5,7 +5,7 @@ tags:
   - mystery
   - thriller
   - teen
-  - lgbtq+
+  - lgbtq-plus
   - 2020s
 ratings:
   entertainment: 3

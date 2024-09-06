@@ -4,7 +4,7 @@ tags:
   - dark comedy
   - satire
   - villain story
-  - lgbtq+
+  - lgbtq-plus
   - 2020s
 ratings:
   entertainment: 2

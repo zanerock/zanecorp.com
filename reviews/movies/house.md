@@ -4,7 +4,7 @@ tags:
   - horror
   - comedy
   - riffable
-  - Japanese
+  - japanese
   - 1970s
 ratings:
   entertainment: 3

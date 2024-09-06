@@ -45,9 +45,9 @@ The movie asks you to keep on accepting poorly explained, poorly supported plot 
 
 Oh, also there's a really unnecessary and also silly dick shaming that's been captured in GIFs all over the Internet: "Six inches is not a lot." Like, OK size queen. WTF?
 
-<div style="position: relative; width: 100%; padding-bottom: 56.25%;">
+<div style={{position: 'relative', width: '100%', paddingBottom: '56.25%'}}>
 <iframe
-style="position:absolute; width:100%; height:100%;"
+style={{position:'absolute', width:'100%', height:'100'}}
 src="https://getyarn.io/yarn-clip/c1ff0274-bc5c-4015-8019-41e7a7ff2b53/embed?autoplay=false&responsive=true"
 frameborder="0"
 ></iframe>
