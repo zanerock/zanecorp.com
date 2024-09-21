@@ -9,6 +9,10 @@ ratings:
   entertainment: 4
   impact: 1
   quality: 3.5
+3rd-party-ratings:
+  imbd: 6.6
+  rotten-tomatoes: 80%
+  metacritic: 66%
 cast-and-crew:
   actors:
     - Barbra Crampton
